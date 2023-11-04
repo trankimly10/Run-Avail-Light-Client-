@@ -35,7 +35,8 @@ cp avail-light-linux-amd64 avail-light
 ```
 ![image](https://github.com/trankimly10/Run-Avail-Light-Client-/assets/53910478/e69f3105-4bc4-46bb-9934-233e785d729b)
 
- Create Systemd file
+** Create Systemd file
+** 
 ```
 touch /etc/systemd/system/availd.service
 nano /etc/systemd/system/availd.service
@@ -107,7 +108,7 @@ touch /etc/systemd/system/availd.service
 nano /etc/systemd/system/availd.service
 ```
 
-**Change your Light Client name and put it into Avail service**
+** put it into Avail service**
 
 ```
 [Unit] 
@@ -137,10 +138,12 @@ Start it manually with:
 You can check that it's working with:
 
 ```systemctl status availd.service```
+
 ![image](https://github.com/trankimly10/Run-Avail-Light-Client-/assets/53910478/cd0ba0b1-679d-4d12-8ad6-e8a1ae9aa257)
 
 You can tail the logs with journalctllike so:
 
 ```journalctl -f -u availd```
+
 ![image](https://github.com/trankimly10/Run-Avail-Light-Client-/assets/53910478/b01d6988-5e85-4a5c-a67b-6b24235d5ac3)
 
