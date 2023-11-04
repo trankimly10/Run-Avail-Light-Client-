@@ -51,7 +51,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service] 
 User=root 
-ExecStart=${HOME}/avail-light/avail-light --network biryani
+ExecStart=/root/avail-light/avail-light --network biryani
 Restart=always 
 RestartSec=120
 [Install] 
