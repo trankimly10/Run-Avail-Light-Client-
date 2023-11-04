@@ -2,11 +2,13 @@
 
 ```
 sudo apt update
-sudo apt install make clang pkg-config libssl-dev build-essential```
+sudo apt install make clang pkg-config libssl-dev build-essential
+```
 ```
 mkdir -p ${HOME}/avail-light
 ```
-cd avail-light```
+cd avail-light
+
 ```
 wget https://github.com/availproject/avail-light/releases/download/v1.7.2/avail-light-linux-amd64.tar.gz
 ```
