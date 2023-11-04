@@ -42,7 +42,7 @@ touch /etc/systemd/system/availd.service
 nano /etc/systemd/system/availd.service
 ```
 
-**Change your Light Client name and put it into Avail service**
+** put it into Avail service**
 
 ```
 [Unit] 
