@@ -6,7 +6,7 @@ https://stc.capital/staking
 
 #Before you start
 
-This guide outlines how to set up an Avail light client on Ubuntu.
+This guide outlines how to set up an Avail light client Version V1.7.3 on Ubuntu.
 
 
 ![image](https://github.com/trankimly10/Run-Avail-Light-Client-/assets/53910478/6c6ae9fb-8c57-45ec-935d-d1e6408d6367)
@@ -24,14 +24,14 @@ mkdir -p ${HOME}/avail-light
 cd avail-light
 ```
 ```
-wget https://github.com/availproject/avail-light/releases/download/v1.7.2/avail-light-linux-amd64.tar.gz
+wget https://github.com/availproject/avail-light/releases/download/v1.7.3/avail-light-linux-amd64.tar.gz
 ```
 ```
 tar -xvzf avail-light-linux-amd64.tar.gz
 cp avail-light-linux-amd64 avail-light
 ```
 ```
-./avail-light --network biryani
+./avail-light --network goldberg
 ```
 ![image](https://github.com/trankimly10/Run-Avail-Light-Client-/assets/53910478/e69f3105-4bc4-46bb-9934-233e785d729b)
 
@@ -51,7 +51,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service] 
 User=root 
-ExecStart=/root/avail-light/avail-light --network biryani
+ExecStart=/root/avail-light/avail-light --network goldberg
 Restart=always 
 RestartSec=120
 [Install] 
@@ -99,7 +99,7 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 git clone https://github.com/availproject/avail-light.git
 cd avail-light
-git checkout v1.7.2
+git checkout v1.7.3
 cargo build --release
 ```
 3. Create Systemd file
@@ -117,7 +117,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service] 
 User=root 
-ExecStart= /root/avail-light/target/release/avail-light --network biryani
+ExecStart= /root/avail-light/target/release/avail-light --network goldberg
 Restart=always 
 RestartSec=120
 [Install] 
