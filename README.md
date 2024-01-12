@@ -6,7 +6,7 @@ https://stc.capital/staking
 
 #Before you start
 
-This guide outlines how to set up an Avail light client Version V1.7.3 on Ubuntu.
+This guide outlines how to set up an Avail light client Version v1.7.5-rc6 on Ubuntu.
 
 
 ![image](https://github.com/trankimly10/Run-Avail-Light-Client-/assets/53910478/6c6ae9fb-8c57-45ec-935d-d1e6408d6367)
@@ -24,7 +24,7 @@ mkdir -p ${HOME}/avail-light
 cd avail-light
 ```
 ```
-wget https://github.com/availproject/avail-light/releases/download/v1.7.3/avail-light-linux-amd64.tar.gz
+wget https://github.com/availproject/avail-light/releases/download/v1.7.5-rc6/avail-light-linux-amd64.tar.gz
 ```
 ```
 tar -xvzf avail-light-linux-amd64.tar.gz
@@ -99,7 +99,7 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 git clone https://github.com/availproject/avail-light.git
 cd avail-light
-git checkout v1.7.3
+git checkout v1.7.5-rc6
 cargo build --release
 ```
 3. Create Systemd file
